@@ -1,0 +1,166 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 320px;
+    max-width: 540px;
+    background: #fff;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.app {
+    height: 45px;
+    background-color: #333333;
+}
+
+.app ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.app ul li {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+}
+
+.app ul li:nth-child(1) {
+    flex: 8;
+}
+
+.app ul li:nth-child(1) img {
+    width: 10px;
+}
+
+.app ul li:nth-child(2) {
+    flex: 10;
+}
+
+.app ul li:nth-child(2) img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.app ul li:nth-child(3) {
+    flex: 57
+}
+
+.app ul li:nth-child(4) {
+    flex: 25;
+    background-color: #f63515;
+}
+
+.search-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    min-width: 320px;
+    max-width: 540px;
+    overflow: hidden;
+    height: 44px;
+}
+
+.search-wrap .more {
+    width: 40px;
+    height: 44px;
+}
+
+.search-wrap .more span {
+    display: block;
+    width: 20px;
+    height: 18px;
+    margin: 14px 0 0 15px;
+    background: url(./images/more-btn.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.search-wrap .login {
+    width: 40px;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    text-align: center;
+}
+
+.search-wrap .search {
+    flex: 1;
+    background-color: #fff;
+    height: 30px;
+    border-radius: 15px;
+    margin: 0 10px;
+}
+
+.jd-icon {
+    position: relative;
+    width: 20px;
+    height: 15px;
+    background: url(./images/jd-icon.png) no-repeat;
+    background-size: 20px 15px;
+    margin: 8px 8px 0 15px;
+    float: left;
+}
+
+.jd-icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 26px;
+    height: 16px;
+    border-right: 1px solid #ddd;
+}
+
+.search-icon-fdj {
+    display: block;
+    position: relative;
+    width: 18px;
+    height: 15px;
+    background: url(./images/jd-sprites.png) no-repeat;
+    background-position: -80px 0;
+    background-size: 200px;
+    margin: 8px 0 0 5px;
+    float: left;
+
+}
+
+/* 主体 */
+
+.slider-wrapper img {
+    width: 100%;
+}
+
+/* 导航栏 */
+.mall-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.mall-nav img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.mall-nav span {
+    display: block;
+    margin-top: 6px;
+    color: #666;
+}

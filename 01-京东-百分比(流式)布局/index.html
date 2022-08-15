@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale
+    =1.0,minimum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0 auto;
+            width: 100%;
+            min-width: 320px;
+            max-width: 540px;
+            background: #fff;
+            font-size: 14px;
+            font-family: -apple-system, Helvetica, sans-serif;
+            line-height: 1.5;
+            color: #666;
+        }
+        a{
+            text-decoration: none;
+        }
+        .app {
+            position: relative;
+            z-index: 120;
+            height: 45px;
+            background-color: #333333;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            /* height: 45px;
+            background-color: #333333; */
+        }
+
+        .app ul li {
+            float: left;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .app ul li:nth-child(1) {
+            width: 8%;
+        }
+
+        .app ul li:nth-child(1) img {
+            width: 10px;
+        }
+
+        .app ul li:nth-child(2) {
+            width: 10%;
+        }
+
+        .app ul li:nth-child(2) img {
+            width: 30px;
+            /* 100%也行，相对于父元素li宽度的100% */
+            /* width: 100%; */
+            vertical-align: middle;
+        }
+
+        .app ul li:nth-child(3) {
+            width: 57%;
+        }
+
+        .app ul li:nth-child(4) {
+            width: 25%;
+            background-color: #f63515;
+        }
+
+        .search-wrap {
+            position: fixed;
+            width: 100%;
+            min-width: 320px;
+            max-width: 540px;
+            overflow: hidden;
+            height: 44px;
+            z-index: 120;
+        }
+
+        .search-wrap .more {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 44px;
+            /* background-color: skyblue; */
+        }
+
+        .search-wrap .more span {
+            display: block;
+            width: 20px;
+            height: 18px;
+            margin: 14px 0 0 15px;
+            background: url(./images/more-btn.png) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .search-wrap .login {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+            height: 44px;
+            line-height: 44px;
+            /* background-color: pink; */
+            color: #fff;
+            text-align: center;
+        }
+
+        .search-wrap .search {
+            position: relative;
+            height: 30px;
+            background-color: #fff;
+            margin: 0 50px;
+            border-radius: 15px;
+            margin-top: 7px;
+        }
+
+        .jd-icon {
+            position: relative;
+            width: 20px;
+            height: 15px;
+            background: url(./images/jd-icon.png) no-repeat;
+            background-size: 20px 15px;
+            margin: 8px 8px 0 15px;
+            float: left;
+        }
+
+        .jd-icon::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 26px;
+            height: 16px;
+            border-right: 1px solid #ddd;
+        }
+
+        .search-icon-fdj {
+            display: block;
+            position: relative;
+            width: 18px;
+            height: 15px;
+            background: url(./images/jd-sprites.png) no-repeat;
+            background-position: -80px 0;
+            background-size: 200px;
+            margin: 8px 0 0 5px;
+            float: left;
+
+        }
+
+        /* 主体 */
+        .main-content {
+            /* width: 500px; */
+        }
+
+        .slider-wrapper img {
+            width: 100%;
+        }
+
+        /* 导航栏 */
+        .mall-nav a {
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+        .mall-nav img {
+            width: 40px;
+            height: 40px;
+            margin-top: 10px;
+        }
+        .mall-nav span{
+            display: block;
+            margin-top: 6px;
+            color:#666;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="app">
+        <ul>
+            <li><img src="./images/close.png" alt=""></li>
+            <li><img src="./images/logo.png" alt=""></li>
+            <li>打开京东App，购物更轻松</li>
+            <li>立即打开</li>
+        </ul>
+    </header>
+
+    <div class="search-wrap">
+        <div class="more">
+            <span></span>
+        </div>
+        <div class="search">
+            <i class="jd-icon"></i>
+            <i class="search-icon-fdj"></i>
+        </div>
+        <div class="login">登录</div>
+    </div>
+
+    <div class="main-content">
+        <div class="floor-content">
+            <div class="slider-wrapper">
+                <ul>
+                    <li><a href="#"><img src="./upload/slider1.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="mall-nav">
+                <a href="#">
+                    <img src="./upload/jdcs.png" alt="">
+                    <span>京东超市</span>
+                </a>
+                <a href="#">
+                    <img src="./upload/nav2.png" alt="">
+                    <span>京东超市</span>
+                </a>
+                <a href="#">
+                    <img src="./upload/nav2.png" alt="">
+                    <span>京东超市</span>
+                </a>
+                <a href="#">
+                    <img src="./upload/nav2.png" alt="">
+                    <span>京东超市</span>
+                </a>
+                <a href="#">
+                    <img src="./upload/nav2.png" alt="">
+                    <span>京东超市</span>
+                </a>
+                <a href="#">
+                    <img src="./upload/jdcs.png" alt="">
+                    <span>京东超市</span>
+                </a>
+                <a href="#">
+                    <img src="./upload/nav2.png" alt="">
+                    <span>京东超市</span>
+                </a>
+                <a href="#">
+                    <img src="./upload/nav2.png" alt="">
+                    <span>京东超市</span>
+                </a>
+                <a href="#">
+                    <img src="./upload/nav2.png" alt="">
+                    <span>京东超市</span>
+                </a>
+                <a href="#">
+                    <img src="./upload/nav2.png" alt="">
+                    <span>京东超市</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

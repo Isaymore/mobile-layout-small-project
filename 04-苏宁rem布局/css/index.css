@@ -1,0 +1,167 @@
+html {
+  font-size: 50px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, STHeiTi, sans-serif;
+  background: #f2f2f2;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.index-page-top-wrap {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  width: 15rem;
+  height: 1.76rem;
+  background-color: #4a82f2;
+}
+.index-page-top-wrap .sort {
+  width: 0.72rem;
+  height: 1.2rem;
+  margin: 0.22rem 0.5rem 0.14rem 0.48rem;
+}
+.index-page-top-wrap .sort img {
+  width: 100%;
+  height: 100%;
+}
+.index-page-top-wrap .index-search-wrap {
+  position: relative;
+  flex: 1;
+  height: 1.76rem;
+  line-height: 1.76rem;
+  font-size: 0.48rem;
+}
+.index-page-top-wrap .index-search-wrap .search-icon-fdj {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.3rem;
+  width: 0.72rem;
+  height: 0.72rem;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAABGtJREFUWAntl8tr1EkQxzMT4qhBo/FBFLMylyWQwJIHiqCnqAdFXfci6klZkFW8uUpUPKjgHyAiomgCHnYRMRg8uHtSlyWuk5dBJ3pJloCPKIkoiUJmJn5q7PrRv4e/yTxO4g96qrq6Ht/uru6uKSv7/oWvQCR8OHx0dHR03sTExIpUKrWgoqLiVUNDw5tIJJIJtwofzQvQ0NDQgsnJyS24/HlmZmYjdKnHfYp+ElC3aZ1NTU0Jz3jO7qwADQ8Pzx0fHz+MtzaALM7p1SgA6gHs0ebm5u5Z2+RS7O/vX8OW3EDvhwDdj8heEvgDQGugy6BRrx7ya9XV1Qfj8fgn75i3H7pCPT09ewlwBaO5luEz+A6CdDLzpCUvk5waGxtrRfYLbQ+2MWv8IfzOlpaWl5bMx34VkAFz3bJ4C4jj5MVVaNqSB7K9vb2rM5nMOQZ3WwrPy8vL1zY2Nr6zZC42EJDZpntoZlcGAI9p2wHzv8t6Fh0mdoCVOo9qhVH/i5Xd8rVJ+fZbEtjkjAOmsrJyfSFgBADBLxF8F23GANrc19d3xPA+4gNkTpMmsGzT9rq6ug8+yzwEgLqFn1Nqwla2JZPJJdq3qQuQ3DMMtqkCTiRn8t4mtbcpeSP59MTIqqampo7Z48q7AKG0lf3We+aZJLAqFkuZXJrmTBZ/coJ9OewChMIOK3CHOLH6RbNM8A5OXosjYq3k8LR4nXoByXOQ/QDTqXypKD4z+OpSf+TSJuWVOoDkUkOob9NH76WnBsXSaDTaoz5YpVrllTqA5NVWITT0NrX0CmFfqBErtlJ5pQ4gKSFUiGJRx1z9BFF8v1c5K7RQeaUOIKlnVIhijfKlpuRNtfoE3LjySh1AUlwhlHqmDMVlJqdUr2SUyf5oOfOlhgMIEHICsq83RlHzalu2JWM3qCdi/qe8UgeQCFC4rQNQKSFK+g0MDCzHoXPUiXffG8ALyL579kgJ4TUopp9Opw9hn331AfOA52TE688FiJs0IYqixLbFTD3jtSmoPzg4WIu/39WYOBeVt6kLkBk4ainslnrG6hfMTk9P/4axXL6SGo9YnT+CnPkAcUN3Y9CuyqzUeUDt1H6hFD9b1Rb+JDG0PlJxlvoAiZSCXGbzMKvxZc9vkk8ncRSob/RCCbZzVIEydkx5Lw0MYP4dyKo8FwOcRdj/M6zUY9q2XMA4TXH0ziYSiX9EX3ywIt1C5cPXafH5pef+DRSqCqXmIk7Gn/Q3q8zQ19Au81DK2zRFgFpanMDr6LdaAd/zT6MKcGsZ+xd5dhHgr3KIfoW6ti4UkATHQbnUwMxKiqsqkeXzEbCdvNwnNrJq+Duh9kGgcgJSY6mBTdkplZ7vlVY9Q1ME66Jd5jTdhcorkN16cvEK9vst/Yus4EHtzxqQGuAsIpUeK7YJvpZgAm4+bZT+CNs4HIvF/q6vr3cea7UVKvY2KAGLbJX+gcwbkO28UF5AsX0XACP/2Z6ypT/pKhbqsyR2JPoKAAWe9JIE+CadfAZDI9Qzc39rMQAAAABJRU5ErkJggg==) no-repeat;
+  background-size: 0.72rem 0.72rem;
+}
+.index-page-top-wrap .index-search-wrap .searchInput {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  padding-left: 1.4rem;
+  height: 1.28rem;
+  width: 100%;
+  border-radius: 0.64rem;
+  color: #999;
+}
+.index-page-top-wrap .login {
+  width: 0.72rem;
+  height: 1.2rem;
+  margin: 0.22rem 0.5rem 0.14rem 0.48rem;
+}
+.index-page-top-wrap .login img {
+  width: 100%;
+  height: 100%;
+}
+.swipe-wrapper {
+  width: 15rem;
+  height: 7.36rem;
+  padding-top: 1.76rem;
+}
+.swipe-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.index-banner {
+  width: 15rem;
+  height: 3.98rem;
+}
+.index-banner img {
+  width: 100%;
+  height: 100%;
+}
+.mall-nav {
+  width: 15rem;
+  height: 5.68rem;
+}
+.mall-nav a {
+  float: left;
+  width: 3rem;
+  height: 2.84rem;
+  text-align: center;
+}
+.mall-nav a img {
+  width: 1.68rem;
+  height: 1.68rem;
+}
+.mall-nav a span {
+  display: block;
+  margin-top: -0.2rem;
+  font-size: 0.48rem;
+  color: #666;
+}
